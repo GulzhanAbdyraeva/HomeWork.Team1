@@ -117,5 +117,3 @@ public class ServiceImpl implements Service{
         return list2;
     }
 }
-
-}
