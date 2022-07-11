@@ -1,11 +1,15 @@
 package com.company;
 
 
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import javax.sound.midi.Track;
+import javax.swing.plaf.nimbus.State;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.Driver;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -30,8 +34,7 @@ public class Main {
         Driver[] drivers = {
                 new Driver(1, "Petr",""),
                 new Driver(2, "Askar",""),
-                new Driver(3, "Uson",""),
-        };
+                new Driver(3, "Uson","")};
         List<Driver> list2 = new ArrayList<>(List.of(drivers));
         String json2 = GSON.toJson(drivers);
         Driver.write(json2);
